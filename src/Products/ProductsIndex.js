@@ -12,9 +12,7 @@ const ProductsIndex = () => {
     if (state) {
       console.warn(`Nothing found for "${state.id}"`);
     }
-  }, []);
 
-  useEffect(() => {
     (async () => {
       const data = await listProducts();
       setProducts(data);
