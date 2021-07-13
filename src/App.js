@@ -5,6 +5,8 @@ import { css } from '@emotion/css';
 import Nav from './Common/Nav';
 import Products from './Products/Products';
 import Admin from './Admin/Admin';
+import ProductsIndex from './Products/ProductsIndex';
+import Product from './Products/Product';
 
 const AppStyles = css`
   margin: 50px auto;
@@ -23,7 +25,10 @@ const App = () => {
       <div className="Container">
         <Nav />
         <Routes>
-          <Route path="/" element={<Products />} />
+          <Route path="/" element={<Products />}>
+            <Route path="/" element={<ProductsIndex />} />
+            <Route path=":id" element={<Product />} />
+          </Route>
           <Route path="/admin" element={<Admin />} />
           {/* <Route path="*" element={<div>Not Found</div>} /> */}
           <Route path="*" element={<Navigate to="/" />} />

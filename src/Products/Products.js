@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/css';
+import { Outlet } from 'react-router-dom';
 
 const ProductStyles = css`
   display: flex;
@@ -19,6 +20,7 @@ const Products = () => (
       className="Logo"
     />
     Products
+    <Outlet />
   </div>
 )
 
