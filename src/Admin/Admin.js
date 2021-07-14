@@ -1,8 +1,10 @@
 import { css } from '@emotion/css';
-import React from 'react';
+import React, { lazy } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import ProductEdit from '../Products/ProductEdit/ProductEdit.container';
-import ProductsIndex from '../Products/ProductsIndex';
+import Loadable from '../Common/Loadable';
+
+const ProductEdit = Loadable(lazy(() => import('../Products/ProductEdit/ProductEdit.container')));
+const ProductsIndex = Loadable(lazy(() => import('../Products/ProductsIndex')));
 
 const AdminStyles = css`
   .Admin {
