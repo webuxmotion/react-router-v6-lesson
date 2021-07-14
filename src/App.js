@@ -6,6 +6,7 @@ import Nav from './Common/Nav';
 import Products from './Products/Products';
 import Admin from './Admin/Admin';
 import ProtectedRoute from './Common/ProtectedRoute';
+import ScrollToTop from './Common/ScrollToTop';
 
 const AppStyles = css`
   margin: 50px auto;
@@ -23,6 +24,7 @@ const App = () => {
 
   return <div className={AppStyles}>
     <Router>
+      <ScrollToTop />
       <div className="Container">
         <Nav />
         <Routes>
