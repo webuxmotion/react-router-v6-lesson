@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import ProductEdit from '../Products/ProductEdit';
+import ProductEdit from '../Products/ProductEdit/ProductEdit.container';
 import ProductsIndex from '../Products/ProductsIndex';
 
 const AdminStyles = css`
@@ -31,7 +31,8 @@ const Admin = () => <div className={AdminStyles}>
   
   <Routes>
     <Route path="/" element={<ProductsIndex />} />
-    <Route path="/new" element={<ProductEdit />} />
+    <Route path="/new" element={<ProductEdit isEdit={false} />} />
+    <Route path="/:id" element={<ProductEdit isEdit={true} />} />
   </Routes>
 </div>
 

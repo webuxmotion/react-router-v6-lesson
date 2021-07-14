@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "id": "the-wedge",
-      "name": "The Wedge",
-      "description": "Tasty sandwich to max your tastebuds.",
-      "price": 699
-    },
-    {
       "id": "spice-dog",
       "name": "Spice Dog",
       "description": "Prepare the spice, it's very nice.",
@@ -14,9 +8,9 @@
     },
     {
       "id": "french-fries",
-      "name": "French Fries",
+      "name": "French Friesssss",
       "description": "That side you've been missing.",
-      "price": 499
+      "price": "500"
     },
     {
       "id": "soulless-salad",
@@ -41,12 +35,6 @@
       "name": "Wild Water",
       "description": "Spring water, wild and watery.",
       "price": 299
-    },
-    {
-      "id": "big-cheese",
-      "name": "aaaa",
-      "price": "100",
-      "description": "bbbb"
     }
   ]
 }
